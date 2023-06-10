@@ -1,0 +1,51 @@
+* {
+    border: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* to remove arrow */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main {
+    text-align: center;
+}
+#calculator {
+    height: 300px;
+    width: 300px;
+    background-color: #3b3b3b;
+    max-width: 80vw;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px;
+    border-radius: 30px;
+    box-shadow: 5px 3px 8px black;
+}
+#result {
+    width: 100%;
+    font-size: 28px;
+    padding: 10px 5px;
+    border-radius: 10px;
+}
+#buttons {
+    height: 70%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 13px;
+}
+#buttons * {
+    background-color: transparent;
+    background-color: blueviolet;
+}
