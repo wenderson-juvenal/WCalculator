@@ -40,12 +40,26 @@ main {
 }
 #buttons {
     height: 70%;
-    width: 100%;
+    display: flex;
+}
+#leftButtons {
+    width: calc(100%*3/4);
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    gap: 13px;
+}
+#rightButtons {
+    width: calc(100%*1/4);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
     gap: 13px;
 }
 #buttons * {
     background-color: transparent;
     background-color: blueviolet;
+}
+#equal {
+    grid-row: span 2;
+    background-color: aquamarine;
 }
